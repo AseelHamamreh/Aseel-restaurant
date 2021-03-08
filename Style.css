@@ -1,0 +1,43 @@
+#title {
+text-align: center ;
+}
+
+
+#logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+#title {
+color: blue;
+}
+
+#list1{
+    list-style: none ;
+    text-align: center;
+
+
+}
+
+
+.li1 {
+    display: inline;
+    margin-right: 3% ;
+
+
+}
+
+
+a{
+    text-decoration: none ;
+}
+      
+
+#MainImg{
+    width: 40% ;
+}
+
+.headers{
+    background-color: blue;
+    color: white;
+}

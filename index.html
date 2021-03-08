@@ -1,79 +1,136 @@
-  
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ocean’s Edge restaurant </title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+
     <header>
-        <ul>
-    <li> <a href="About us.html"> About us </a> </li>
-    <li> <a href="contact us.html"> Contact us  </a> </li>
-    <li> <a href="menu.jpg">  Our everyday Menu </a> </li>
 
+        <img id="logo" src="images.png" alt="restaurant Logo">
+       
+            <h1 id="title">
+                Ocean’s Edge restaurant
+            </h1>
+
+            <hr>
+
+
+        <ul id="list1">
+            <li class="li1"> <a href="About us.html"> About us </a> </li>
+            <li class="li1"> <a href="contact us.html"> Contact us </a> </li>
+            <li class="li1"> <a href="menu.jpg"> Our everyday Menu </a> </li>
+            <li class="li1"> <a href="https://goo.gl/maps/duTyxJhHzxAbnrdB9"> Our Location </a> </li>
+
+
+        </ul>
+
+
+        <br>
+        <br>
+        <img id="MainImg" src="Seafood-restaurant.jpg" alt="restaurant Logo">
+
+    </header>
+
+    <main>
+
+        <h1 id="h1header"> check our new dishe from <a href="new dish.html"> HERE! </a> </h1>
+
+<br>
+        <p>
+            Seafood is a high-protein food that is low in calories, total fat, and saturated fat. High in vitamins and
+            minerals, seafood has been shown to have numerous health benefits. For example, recent studies have shown
+            that eating seafood can decrease the risk of heart attack, stroke, obesity, and hypertension. Seafood also
+            provides essential nutrients for developing infants and children.
+        </p>
+
+
+        <h2 class="headers"> Calories and Protein </h2>
+        <p>
+            Seafood is generally considered to be a low-calorie protein source. Most low-fat species of fish, such as
+            cod, flounder and sole, contain less than 100 calories per 3-ounce cooked portion, and even fattier fish
+            like mackerel, herring, and salmon have about 200 calories per serving. Seafood is a complete protein
+            source. It contains enough of the essential amino acids to assure healthy growth and optimal fetal
+            development. A 3-ounce serving of most fish and shellfish provides about about 30-40% of the average daily
+            recommended amount of protein. The protein in seafood is easier to digest because seafood has less
+            connective tissue than red meats and poultry.
+            <br>
+
+            <h2 class="headers"> Fat and Cholesterol </h2>
+            Seafood is generally considered to be low in total fat and saturated fat. Most fish and shellfish contain
+            less than 5 percent total fat, and even the fattiest fish, such as mackerel and king salmon, have no more
+            than 15 percent fat. A large proportion of the fat in seafood is polyunsaturated, including omega-3 fatty
+            acids, which have added health benefits.
+
+            Omega-3 fatty acids are essential fatty acids that are required for healthy human development. These organic
+            compounds cannot be produced by the human body and therefore need to be obtained through food. Scientific
+            evidence suggests that the marine-derived omega-3 fatty acids eicosapentaenoic acid (EPA) and
+            docosahexaenoic acid (DHA) can help reduce the risk of heart disease and contribute to brain and vision
+            development in infants. Fish and shellfish are the main dietary sources of EPA and DHA. The plant-derived
+            omega-3 fatty acid, alpha-linolenic acid (ALA), is a precursor to EPA and DHA and is only converted at rates
+            of about 0.1-9% in the human body. The American Heart Association recommends 1000 milligrams (mg) of EPA/DHA
+            per day for patients with coronary heart disease, and two meals of oily fish per week for patients without
+            heart disease. Fish with medium to high levels of omega-3 fatty acids include oily ocean fish, such as
+            salmon, herring, mackerel and sardines (see Description of Omega-3’s and Their Role in Human Health).
+
+            Cholesterol is present at varying amounts in most animal foods. Current dietary recommendations suggest
+            limiting cholesterol intake to 300 mg per day. Almost all fish and shellfish contain well under 100 mg of
+            cholesterol per 3-ounce cooked serving, and many of the leaner types of fish have less than 60 mg.
+
+        </p>
+
+
+<br>
+<br>
+        <footer>
+            &copy; Ocean’s Edge restaurant
     
-    </ul>
- 
-    <hr> 
+            
+    
 
-    <img src="Seafood-restaurant.jpg" width="400" height="250" alt="restaurant Logo">
+        </footer>
 
-</header>
+        <script>
 
-<main>
+            console.log("if you want to make changes contact me at this number 0324897394");
 
-    <h2> <style>backg</style> Ocean’s Edge restaurant   </h2>
-    <h1> check our new dishe from <a href="new dish.html"> HERE! </a> </h1>
+            var Ans = prompt("Are you hungry?");
 
-  
+            while (Ans != 'yes' && Ans != 'no') {
+                Ans = prompt("Are you hungry?");
+            }
 
-<footer>
-    &copy; Ocean’s Edge restaurant
-<hr>
+            if (Ans == 'yes') {
+                alert("Then you are in the righte place!");
+                var Meal = prompt('How many meals you want to order?');
+                var P = '<img src= "seafood.jpg" />';
+                console.log(P);
+                var Res = '';
 
-    <p> Our Team:</p>
-    <p> @  <a href="https://dinasami.github.io/Lab03/"> Dina </p>
-    <p> @  <a href="https://tasneem-shaheen.github.io/resturanrt/"> Tasneem</p>
+                for (var i = 0; i < Meal; i++) {
+                    Res = Res + P;
 
-</footer>
-
-<script>
-
-console.log("if you want to make changes contact me at this number 0324897394");
-
-var Ans = prompt ("Are you hungry?");
-
-while (Ans != 'yes' && Ans != 'no')
-    {
-    Ans = prompt ("Are you hungry?"); }
-
-if (Ans == 'yes') {
-    alert("Then you are in the righte place!");
-    var Meal = prompt('How many meals you want to order?');
-    var P = '<img src= "seafood.jpg" />' ;
-    console.log(P);
-    var Res = '' ;
-
-    for (var i = 0; i<Meal ; i++)
-    {Res = Res + P ;
-
-    }
-    console.log(Res);
-    document.write (Res) ;
+                }
+                console.log(Res);
+                document.write(Res);
 
 
 
-} else if (Ans == 'no') {
-    alert("Then go and do something useful!!");
-}
+            } else if (Ans == 'no') {
+                alert("Then go and do something useful!!");
+            }
 
 
-</script>
+        </script>
 
-</main>
+    </main>
 </body>
+
 </html>
